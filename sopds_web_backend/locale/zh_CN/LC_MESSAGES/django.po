@@ -1,0 +1,366 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-07 16:38+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%"
+"100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\sopds_web_backend\templates\admin\base.html:30
+msgid "Welcome,"
+msgstr "欢迎, "
+
+#: .\sopds_web_backend\templates\admin\base.html:35
+msgid "View site"
+msgstr "查看网站"
+
+#: .\sopds_web_backend\templates\admin\base.html:40
+msgid "Documentation"
+msgstr "文档"
+
+#: .\sopds_web_backend\templates\admin\base.html:44
+msgid "Change password"
+msgstr "修改密码"
+
+#: .\sopds_web_backend\templates\admin\base.html:46
+msgid "Log out"
+msgstr "登出"
+
+#: .\sopds_web_backend\templates\admin\base.html:56
+msgid "Home"
+msgstr "主页"
+
+#: .\sopds_web_backend\templates\sopds_authors.html:8
+#, python-format
+msgid "Total: %(a_book_count)s books."
+msgstr "总数: %(a_book_count)s 本."
+
+#: .\sopds_web_backend\templates\sopds_authors.html:17
+#: .\sopds_web_backend\templates\sopds_books.html:106
+#: .\sopds_web_backend\templates\sopds_catalogs.html:42
+#: .\sopds_web_backend\templates\sopds_series.html:17
+msgid "Previous page"
+msgstr "上一页"
+
+#: .\sopds_web_backend\templates\sopds_authors.html:32
+#: .\sopds_web_backend\templates\sopds_books.html:121
+#: .\sopds_web_backend\templates\sopds_catalogs.html:57
+#: .\sopds_web_backend\templates\sopds_series.html:32
+msgid "Next page"
+msgstr "下一页"
+
+#: .\sopds_web_backend\templates\sopds_books.html:15
+msgid "Confirm the deletion of the book to your bookshelf."
+msgstr "确认删除书架上的书."
+
+#: .\sopds_web_backend\templates\sopds_books.html:25
+msgid "Delete"
+msgstr "删除"
+
+#: .\sopds_web_backend\templates\sopds_books.html:26
+#: .\sopds_web_backend\templates\sopds_books.html:37
+msgid "Cancel"
+msgstr "取消"
+
+#: .\sopds_web_backend\templates\sopds_books.html:34
+msgid "Confirm to clear your bookshelf."
+msgstr "确认清空你的书架."
+
+#: .\sopds_web_backend\templates\sopds_books.html:36
+msgid "Clear"
+msgstr "清空"
+
+#: .\sopds_web_backend\templates\sopds_books.html:43
+msgid "Clear bookshelf"
+msgstr "清空书架"
+
+#: .\sopds_web_backend\templates\sopds_books.html:49
+msgid "Download:"
+msgstr "下载:"
+
+#: .\sopds_web_backend\templates\sopds_books.html:61
+msgid "Delete from bookshelf"
+msgstr "从书架上删除"
+
+#: .\sopds_web_backend\templates\sopds_books.html:71
+msgid "Book title:"
+msgstr "书名:"
+
+#: .\sopds_web_backend\templates\sopds_books.html:73
+msgid "Authors:"
+msgstr "作者:"
+
+#: .\sopds_web_backend\templates\sopds_books.html:76
+msgid "体裁:"
+msgstr "Жанры:"
+
+#: .\sopds_web_backend\templates\sopds_books.html:79
+msgid "系列:"
+msgstr "Серии:"
+
+#: .\sopds_web_backend\templates\sopds_books.html:80
+msgid "No in Series:"
+msgstr "No in Series:"
+
+#: .\sopds_web_backend\templates\sopds_books.html:82
+msgid "File:"
+msgstr "文件:"
+
+#: .\sopds_web_backend\templates\sopds_books.html:83
+msgid "File size:"
+msgstr "文件大小:"
+
+#: .\sopds_web_backend\templates\sopds_books.html:84
+msgid "Changes date:"
+msgstr "修改日期:"
+
+#: .\sopds_web_backend\templates\sopds_books.html:86
+msgid "Doubles for book:"
+msgstr "Doubles for book:"
+
+#: .\sopds_web_backend\templates\sopds_books.html:89
+msgid "Read date:"
+msgstr "阅读日期:"
+
+#: .\sopds_web_backend\templates\sopds_breadcrumbs.html:3
+msgid "You are here:"
+msgstr "在这:"
+
+#: .\sopds_web_backend\templates\sopds_footer.html:6
+msgid "BOOKSHELF"
+msgstr "书架"
+
+#: .\sopds_web_backend\templates\sopds_footer.html:19
+msgid ""
+"Bookshelf is available only SimpleOPDS Catalog mode with activated user "
+"authorization."
+msgstr ""
+"书架仅在激活用户的SimplePods目录模式下可用 "
+"授权."
+
+#: .\sopds_web_backend\templates\sopds_footer.html:23
+msgid "STATISTICS"
+msgstr "统计"
+
+#: .\sopds_web_backend\templates\sopds_footer.html:25
+msgid "This сatalog contains:"
+msgstr "此目录包含:"
+
+#: .\sopds_web_backend\templates\sopds_footer.html:26
+msgid "books,"
+msgstr "书,"
+
+#: .\sopds_web_backend\templates\sopds_footer.html:27
+msgid "authors,"
+msgstr "作者,"
+
+#: .\sopds_web_backend\templates\sopds_footer.html:28
+msgid "genres and"
+msgstr "体裁 и"
+
+#: .\sopds_web_backend\templates\sopds_footer.html:29
+msgid "series."
+msgstr "系列."
+
+#: .\sopds_web_backend\templates\sopds_footer.html:32
+msgid "Last collection scan date:"
+msgstr "最后一次扫描日期:"
+
+#: .\sopds_web_backend\templates\sopds_footer.html:33
+msgid "Never"
+msgstr "永不"
+
+#: .\sopds_web_backend\templates\sopds_footer.html:38
+msgid "RANDOM BOOK"
+msgstr "随便看看"
+
+#: .\sopds_web_backend\templates\sopds_hello.html:7
+msgid "Hello"
+msgstr "你好"
+
+#: .\sopds_web_backend\templates\sopds_hello.html:7
+msgid "Guest"
+msgstr "游客"
+
+#: .\sopds_web_backend\templates\sopds_hello.html:9
+msgid ""
+"Simple OPDS Catalog - is a free program for Linux and Windows, which allows "
+"for the rapid creation of electronic OPDS-catalog books. OPDS (Open "
+"Publication Distribution System) directory allows you to access your library "
+"through the Internet with many devices for reading electronic books, "
+"tablets, smartphones, etc. More about the program can be found on the "
+"project website:"
+msgstr ""
+"Simple OPDS Catalog - 是一个OPDS服务器 "
+"项目地址:"
+
+#: .\sopds_web_backend\templates\sopds_login.html:9
+msgid "Username"
+msgstr "用户名"
+
+#: .\sopds_web_backend\templates\sopds_login.html:10
+msgid "Enter Username"
+msgstr "输入用户名"
+
+#: .\sopds_web_backend\templates\sopds_login.html:12
+msgid "Password"
+msgstr "密码"
+
+#: .\sopds_web_backend\templates\sopds_login.html:13
+msgid "Enter Password"
+msgstr "输入密码"
+
+#: .\sopds_web_backend\templates\sopds_login.html:15
+msgid "Log in"
+msgstr "登录"
+
+#: .\sopds_web_backend\templates\sopds_logo.html:14
+#: .\sopds_web_backend\views.py:288 .\sopds_web_backend\views.py:330
+msgid "Search"
+msgstr "搜索"
+
+#: .\sopds_web_backend\templates\sopds_logo.html:26
+msgid "Choose Search Type:"
+msgstr "选择搜索类型:"
+
+#: .\sopds_web_backend\templates\sopds_logo.html:27
+msgid "Title"
+msgstr "标题"
+
+#: .\sopds_web_backend\templates\sopds_logo.html:28
+msgid "Author"
+msgstr "作者"
+
+#: .\sopds_web_backend\templates\sopds_logo.html:29
+#: .\sopds_web_backend\templates\sopds_menu.html:10
+#: .\sopds_web_backend\templates\sopds_menu.html:33
+#: .\sopds_web_backend\views.py:288 .\sopds_web_backend\views.py:504
+msgid "Series"
+msgstr "系列"
+
+#: .\sopds_web_backend\templates\sopds_menu.html:6
+#: .\sopds_web_backend\templates\sopds_menu.html:16
+#: .\sopds_web_backend\views.py:393
+msgid "Catalogs"
+msgstr "目录"
+
+#: .\sopds_web_backend\templates\sopds_menu.html:7
+#: .\sopds_web_backend\templates\sopds_menu.html:17
+#: .\sopds_web_backend\views.py:98 .\sopds_web_backend\views.py:104
+#: .\sopds_web_backend\views.py:117 .\sopds_web_backend\views.py:130
+#: .\sopds_web_backend\views.py:139 .\sopds_web_backend\views.py:142
+#: .\sopds_web_backend\views.py:151 .\sopds_web_backend\views.py:155
+#: .\sopds_web_backend\views.py:165 .\sopds_web_backend\views.py:177
+#: .\sopds_web_backend\views.py:430
+msgid "Books"
+msgstr "书"
+
+#: .\sopds_web_backend\templates\sopds_menu.html:8
+#: .\sopds_web_backend\templates\sopds_menu.html:24
+#: .\sopds_web_backend\views.py:330 .\sopds_web_backend\views.py:467
+msgid "Authors"
+msgstr "作者"
+
+#: .\sopds_web_backend\templates\sopds_menu.html:9
+#: .\sopds_web_backend\templates\sopds_menu.html:31
+#: .\sopds_web_backend\views.py:522 .\sopds_web_backend\views.py:526
+msgid "Genres"
+msgstr "体裁"
+
+#: .\sopds_web_backend\templates\sopds_selectauthor.html:16
+#, python-format
+msgid "Total: %(chars_cnt)s authors."
+msgstr "总计: %(chars_cnt)s 作者."
+
+#: .\sopds_web_backend\templates\sopds_selectbook.html:16
+#, python-format
+msgid "Total: %(chars_cnt)s books."
+msgstr "总计: %(chars_cnt)s 本书."
+
+#: .\sopds_web_backend\templates\sopds_selectgenres.html:16
+#, python-format
+msgid "Total: %(g_num_book)s books."
+msgstr "总计: %(g_num_book)s 本书."
+
+#: .\sopds_web_backend\templates\sopds_selectseries.html:16
+#, python-format
+msgid "Total: %(chars_cnt)s series."
+msgstr "总计: %(chars_cnt)s 系列."
+
+#: .\sopds_web_backend\templates\sopds_series.html:8
+#, python-format
+msgid "Total: %(s_book_count)s books."
+msgstr "总计: %(s_book_count)s 本书."
+
+#: .\sopds_web_backend\templates\sopds_top.html:19
+#: .\sopds_web_backend\views.py:595
+msgid "Logout"
+msgstr "登出"
+
+#: .\sopds_web_backend\templates\sopds_top.html:21
+msgid "Settings"
+msgstr "设置"
+
+#: .\sopds_web_backend\templates\sopds_top.html:24
+#: .\sopds_web_backend\views.py:563
+msgid "Login"
+msgstr "登录"
+
+#: .\sopds_web_backend\views.py:98 .\sopds_web_backend\views.py:104
+msgid "Search by title"
+msgstr "根据标题搜索"
+
+#: .\sopds_web_backend\views.py:117
+msgid "Search by author"
+msgstr "根据作者搜索"
+
+#: .\sopds_web_backend\views.py:130
+msgid "Search by series"
+msgstr "根据系列搜索"
+
+#: .\sopds_web_backend\views.py:139 .\sopds_web_backend\views.py:142
+msgid "Search by genre"
+msgstr "根据体裁搜索"
+
+#: .\sopds_web_backend\views.py:151 .\sopds_web_backend\views.py:155
+msgid "Bookshelf"
+msgstr "书架"
+
+#: .\sopds_web_backend\views.py:165
+msgid "Doubles for book"
+msgstr "Doubles for book"
+
+#: .\sopds_web_backend\views.py:390
+msgid "ROOT"
+msgstr "ROOT"
+
+#: .\sopds_web_backend\views.py:430 .\sopds_web_backend\views.py:467
+#: .\sopds_web_backend\views.py:504 .\sopds_web_backend\views.py:522
+#: .\sopds_web_backend\views.py:526
+msgid "Select"
+msgstr "选择"
+
+#: .\sopds_web_backend\views.py:558
+msgid "HOME"
+msgstr "主页"
+
+#: .\sopds_web_backend\views.py:579
+msgid "This account is not active!"
+msgstr "该账户未激活!"
+
+#: .\sopds_web_backend\views.py:583
+msgid "User does not exist or the password is incorrect!"
+msgstr "账户不存在或密码错误!"
