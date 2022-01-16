@@ -163,7 +163,7 @@ CONSTANCE_BACKEND = 'constance.backends.database.DatabaseBackend'
 CONSTANCE_ADDITIONAL_FIELDS = {
     'language_select': ['django.forms.fields.ChoiceField', {
         'widget': 'django.forms.Select',
-        'choices': (("ru-RU", "Russian"), ("en-US", "English"))
+        'choices': (("ru-RU", "Russian"), ("en-US", "English"), ("zh-CN", "Chinese"))
     }],
 }
 
