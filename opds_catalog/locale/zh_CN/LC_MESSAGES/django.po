@@ -318,7 +318,7 @@ msgid ""
 "The book on the link you specified is not found, try to repeat the book "
 "search first."
 msgstr ""
-"你指定的连接中未找到书本，请重复尝试"
+"你指定的链接中未找到书本，请重复尝试"
 
 #: .\opds_catalog\management\commands\sopds_telebot.py:259
 msgid "Annotation:"
