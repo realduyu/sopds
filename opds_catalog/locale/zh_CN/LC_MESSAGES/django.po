@@ -1,0 +1,329 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-17 10:44+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\opds_catalog\feeds.py:132
+#, python-format
+msgid "All books by %(author)s"
+msgstr "%(author)s"
+
+#: .\opds_catalog\feeds.py:144
+msgid "Book doublicates"
+msgstr ""
+
+#: .\opds_catalog\feeds.py:165 .\opds_catalog\feeds.py:250
+#: .\opds_catalog\feeds.py:252 .\opds_catalog\tests\test_feeds.py:24
+msgid "By catalogs"
+msgstr "目录"
+
+#: .\opds_catalog\feeds.py:166 .\opds_catalog\tests\test_feeds.py:25
+#, python-format
+msgid "Catalogs: %(catalogs)s, books: %(books)s."
+msgstr "目录： %(catalogs)s, 图书： %(books)s."
+
+#: .\opds_catalog\feeds.py:167
+msgid "作者"
+msgstr ""
+
+#: .\opds_catalog\feeds.py:168 .\opds_catalog\tests\test_feeds.py:26
+#, python-format
+msgid "作者: %(authors)s."
+msgstr ""
+
+#: .\opds_catalog\feeds.py:169
+msgid "标题"
+msgstr ""
+
+#: .\opds_catalog\feeds.py:170
+#, python-format
+msgid "图书: %(books)s."
+msgstr ""
+
+#: .\opds_catalog\feeds.py:171
+msgid "体裁"
+msgstr ""
+
+#: .\opds_catalog\feeds.py:172 .\opds_catalog\tests\test_feeds.py:27
+#, python-format
+msgid "体裁: %(genres)s."
+msgstr ""
+
+#: .\opds_catalog\feeds.py:173
+msgid "系列"
+msgstr ""
+
+#: .\opds_catalog\feeds.py:174
+#, python-format
+msgid "系列: %(series)s."
+msgstr ""
+
+#: .\opds_catalog\feeds.py:178
+#, python-format
+msgid "%(username)s Book shelf"
+msgstr "%(username)s 书架"
+
+#: .\opds_catalog\feeds.py:179
+#, python-format
+msgid "%(username)s books readed: %(bookshelf)s."
+msgstr "%(username)s books readed: %(bookshelf)s."
+
+#: .\opds_catalog\feeds.py:319 .\opds_catalog\feeds.py:572
+#, python-format
+msgid "<b>Authors: </b>%(authors)s<br/>"
+msgstr "<b>作者: </b>%(authors)s<br/>"
+
+#: .\opds_catalog\feeds.py:320 .\opds_catalog\feeds.py:573
+#, python-format
+msgid "<b>Genres: </b>%(genres)s<br/>"
+msgstr "<b>体裁: </b>%(genres)s<br/>"
+
+#: .\opds_catalog\feeds.py:321 .\opds_catalog\feeds.py:574
+#, python-format
+msgid "<b>Series: </b>%(series)s<br/>"
+msgstr "<b>系列: </b>%(series)s<br/>"
+
+#: .\opds_catalog\feeds.py:322 .\opds_catalog\feeds.py:575
+#, python-format
+msgid "<b>No in Series: </b>%(ser_no)s<br/>"
+msgstr "<b>No in Series: </b>%(ser_no)s<br/>"
+
+#: .\opds_catalog\feeds.py:323 .\opds_catalog\feeds.py:576
+#, python-format
+msgid ""
+"<b>File: </b>%(filename)s<br/><b>File size: </b>%(filesize)s<br/><b>Changes "
+"date: </b>%(docdate)s<br/>"
+msgstr ""
+"<b>文件: </b>%(filename)s<br/><b>文件大小: </b>%(filesize)s<br/><b>修改 "
+"日期: </b>%(docdate)s<br/>"
+
+#: .\opds_catalog\feeds.py:357 .\opds_catalog\tests\test_feeds.py:60
+msgid "Search by titles"
+msgstr "根据标题搜索"
+
+#: .\opds_catalog\feeds.py:357
+msgid "Search books by title"
+msgstr "根据标题搜索"
+
+#: .\opds_catalog\feeds.py:358
+msgid "Search by authors"
+msgstr "根据作者搜索"
+
+#: .\opds_catalog\feeds.py:358
+msgid "Search authors by name"
+msgstr "根据作者名搜索"
+
+#: .\opds_catalog\feeds.py:359
+msgid "Search series"
+msgstr "根据系列搜索"
+
+#: .\opds_catalog\feeds.py:391
+msgid "找到的书"
+msgstr ""
+
+#: .\opds_catalog\feeds.py:391
+msgid "隐藏重复项"
+msgstr ""
+
+#: .\opds_catalog\feeds.py:391
+msgid "显示重复项"
+msgstr ""
+
+#: .\opds_catalog\feeds.py:577
+#, python-format
+msgid "<b>Doubles count: </b>%(doubles)s<br/>"
+msgstr "<b>重复数: </b>%(doubles)s<br/>"
+
+#: .\opds_catalog\feeds.py:592
+msgid "Series by authors select"
+msgstr "按作者选择的系列"
+
+#: .\opds_catalog\feeds.py:613
+msgid "Books by series"
+msgstr "系列"
+
+#: .\opds_catalog\feeds.py:613
+msgid "Books by author and series"
+msgstr "按照作者与系列"
+
+#: .\opds_catalog\feeds.py:614
+msgid "Books outside series"
+msgstr "系列之外的书籍"
+
+#: .\opds_catalog\feeds.py:614
+msgid "Books by author outside series"
+msgstr "作者在此系列以外的书籍"
+
+#: .\opds_catalog\feeds.py:615
+msgid "Books by alphabet"
+msgstr "字母表"
+
+#: .\opds_catalog\feeds.py:615
+msgid "Books by author alphabetical order"
+msgstr "按照作者字母顺序"
+
+#: .\opds_catalog\feeds.py:646
+msgid "Authors found"
+msgstr "找到的作者"
+
+#: .\opds_catalog\feeds.py:699 .\opds_catalog\feeds.py:777
+#, python-format
+msgid "Books count: %s"
+msgstr "图书数： %s"
+
+#: .\opds_catalog\feeds.py:715
+msgid "Series found"
+msgstr "找到的系列"
+
+#: .\opds_catalog\feeds.py:801
+msgid "Select language"
+msgstr "选择语言"
+
+#: .\opds_catalog\feeds.py:813 .\opds_catalog\tests\test_feeds.py:106
+#: .\opds_catalog\tests\test_feeds.py:119
+#: .\opds_catalog\tests\test_feeds.py:130
+msgid "Cyrillic"
+msgstr "西里尔语"
+
+#: .\opds_catalog\feeds.py:814 .\opds_catalog\tests\test_feeds.py:107
+msgid "Latin"
+msgstr "拉丁语"
+
+#: .\opds_catalog\feeds.py:815 .\opds_catalog\tests\test_feeds.py:108
+msgid "Digits"
+msgstr "数字"
+
+#: .\opds_catalog\feeds.py:816 .\opds_catalog\tests\test_feeds.py:109
+msgid "Other symbols"
+msgstr "其他字符"
+
+#: .\opds_catalog\feeds.py:817 .\opds_catalog\tests\test_feeds.py:110
+msgid "Show all"
+msgstr "所有"
+
+#: .\opds_catalog\feeds.py:847
+msgid "Select books by substring"
+msgstr "通过字符选择"
+
+#: .\opds_catalog\feeds.py:884 .\opds_catalog\feeds.py:1050
+#, python-format
+msgid "Found: %s books"
+msgstr "找到的：%s"
+
+#: .\opds_catalog\feeds.py:905
+msgid "Select authors by substring"
+msgstr "根据字符选择作者"
+
+#: .\opds_catalog\feeds.py:942
+#, python-format
+msgid "Found: %s authors"
+msgstr "找到的：%s"
+
+#: .\opds_catalog\feeds.py:963
+msgid "Select series by substring"
+msgstr "根据字符选择系列"
+
+#: .\opds_catalog\feeds.py:1000
+#, python-format
+msgid "Found: %s series"
+msgstr "找到的： %s"
+
+#: .\opds_catalog\feeds.py:1021
+#, python-format
+msgid "Select genres (%s)"
+msgstr "选择体裁 (%s)"
+
+#: .\opds_catalog\feeds.py:1021
+msgid "section"
+msgstr "章节"
+
+#: .\opds_catalog\feeds.py:1021
+msgid "subsection"
+msgstr "子章节"
+
+#: .\opds_catalog\management\commands\sopds_telebot.py:53
+#, python-format
+msgid ""
+"Hello %s!\n"
+"Unfortunately you do not have access to information. Please contact the bot "
+"administrator."
+msgstr ""
+"你好 %s!\n"
+"很不幸，你没有权限访问此信息，请联系管理员。"
+
+#: .\opds_catalog\management\commands\sopds_telebot.py:54
+#, python-format
+msgid "Denied access for user: %s"
+msgstr "拒绝了用户的访问：%s"
+
+#: .\opds_catalog\management\commands\sopds_telebot.py:109
+#, python-format
+msgid ""
+"%(subtitle)s\n"
+"Hello %(username)s! To search for a book, enter part of her title or author:"
+msgstr ""
+"%(subtitle)s\n"
+"你好 %(username)s! 你可以输入标题或作者的一部分来找到一本书:"
+
+#: .\opds_catalog\management\commands\sopds_telebot.py:174
+#, python-format
+msgid "(doubles:%s) "
+msgstr "(doubles:%s) "
+
+#: .\opds_catalog\management\commands\sopds_telebot.py:194
+msgid "Too short for search, please try again."
+msgstr "太短了，请重试"
+
+#: .\opds_catalog\management\commands\sopds_telebot.py:196
+#, python-format
+msgid "I'm searching for the book: %s"
+msgstr "我正在搜索的书：%s"
+
+#: .\opds_catalog\management\commands\sopds_telebot.py:208
+msgid "No results were found for your query, please try again."
+msgstr "没有找到你要的书，请重试"
+
+#: .\opds_catalog\management\commands\sopds_telebot.py:213
+#, python-format
+msgid ""
+"Found %s books.\n"
+"I create list, after a few seconds, select the file to download:"
+msgstr ""
+
+#: .\opds_catalog\management\commands\sopds_telebot.py:253
+#: .\opds_catalog\management\commands\sopds_telebot.py:291
+msgid ""
+"The book on the link you specified is not found, try to repeat the book "
+"search first."
+msgstr ""
+
+#: .\opds_catalog\management\commands\sopds_telebot.py:259
+msgid "Annotation:"
+msgstr "注释"
+
+#: .\opds_catalog\management\commands\sopds_telebot.py:323
+msgid "There was a technical error, please contact the Bot administrator."
+msgstr "有一个技术错误，请联系管理员。"
+
+#: .\opds_catalog\sopdscan.py:235
+msgid "Unknown author"
+msgstr "未知作者"
+
+#: .\opds_catalog\tests\test_feeds.py:78
+#, python-format
+msgid "All books by %(full_name)s"
+msgstr "所有图书 %(full_name)s"

@@ -8,16 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-07 16:38+0300\n"
+"POT-Creation-Date: 2022-01-17 10:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%"
-"100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: .\sopds_web_backend\templates\admin\base.html:30
 msgid "Welcome,"
@@ -104,12 +105,16 @@ msgid "Authors:"
 msgstr "作者:"
 
 #: .\sopds_web_backend\templates\sopds_books.html:76
-msgid "体裁:"
-msgstr "Жанры:"
+#, fuzzy
+#| msgid "Genres"
+msgid "Genres:"
+msgstr "体裁"
 
 #: .\sopds_web_backend\templates\sopds_books.html:79
-msgid "系列:"
-msgstr "Серии:"
+#, fuzzy
+#| msgid "Series"
+msgid "Series:"
+msgstr "系列"
 
 #: .\sopds_web_backend\templates\sopds_books.html:80
 msgid "No in Series:"
@@ -147,9 +152,7 @@ msgstr "书架"
 msgid ""
 "Bookshelf is available only SimpleOPDS Catalog mode with activated user "
 "authorization."
-msgstr ""
-"书架仅在激活用户的SimplePods目录模式下可用 "
-"授权."
+msgstr "书架仅在激活用户的SimplePods目录模式下可用 授权."
 
 #: .\sopds_web_backend\templates\sopds_footer.html:23
 msgid "STATISTICS"
@@ -203,9 +206,7 @@ msgid ""
 "through the Internet with many devices for reading electronic books, "
 "tablets, smartphones, etc. More about the program can be found on the "
 "project website:"
-msgstr ""
-"Simple OPDS Catalog - 是一个OPDS服务器 "
-"项目地址:"
+msgstr "Simple OPDS Catalog - 是一个OPDS服务器 项目地址:"
 
 #: .\sopds_web_backend\templates\sopds_login.html:9
 msgid "Username"
