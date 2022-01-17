@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-17 10:44+0800\n"
+"POT-Creation-Date: 2022-01-17 14:32+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,7 +118,7 @@ msgstr "系列"
 
 #: .\sopds_web_backend\templates\sopds_books.html:80
 msgid "No in Series:"
-msgstr "No in Series:"
+msgstr "系列之外:"
 
 #: .\sopds_web_backend\templates\sopds_books.html:82
 msgid "File:"
@@ -134,7 +134,7 @@ msgstr "修改日期:"
 
 #: .\sopds_web_backend\templates\sopds_books.html:86
 msgid "Doubles for book:"
-msgstr "Doubles for book:"
+msgstr "重复的书:"
 
 #: .\sopds_web_backend\templates\sopds_books.html:89
 msgid "Read date:"
@@ -342,7 +342,7 @@ msgstr "书架"
 
 #: .\sopds_web_backend\views.py:165
 msgid "Doubles for book"
-msgstr "Doubles for book"
+msgstr "重复的书"
 
 #: .\sopds_web_backend\views.py:390
 msgid "ROOT"

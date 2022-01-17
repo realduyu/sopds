@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-17 10:44+0800\n"
+"POT-Creation-Date: 2022-01-17 14:32+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,8 +30,8 @@ msgid "List of managed book files extensions"
 msgstr "图书文件名扩展"
 
 #: .\sopds\settings.py:174
-msgid "进行一次扫描"
-msgstr ""
+msgid "Turn once scanning directly"
+msgstr "开始一次扫描"
 
 #: .\sopds\settings.py:175
 msgid "Pages cache time"
@@ -45,7 +45,8 @@ msgstr "Telegram API Token"
 msgid ""
 "Enable telebot authentication. Test presense telegram username in local "
 "users database (case insensetive)."
-msgstr "启用telebot认证。在本地测试telegram用户名，用户数据库（不敏感的情况下）"
+msgstr ""
+"启用telebot认证。在本地测试telegram用户名，用户数据库（不敏感的情况下）"
 
 #: .\sopds\settings.py:179 .\sopds\settings.py:186
 msgid "Max items on page"
@@ -81,7 +82,7 @@ msgstr "显示没有嵌入封面的书籍的图像文件的路径"
 
 #: .\sopds\settings.py:191
 msgid "This flag activate SAX Parser for FB2 instead of lxml.xpath"
-msgstr ""
+msgstr "激活FB2的SAX解析器，而不是lxml.xpath"
 
 #: .\sopds\settings.py:192
 msgid "This flag activate zip files scanning"
@@ -89,25 +90,25 @@ msgstr "扫描zip文件"
 
 #: .\sopds\settings.py:193
 msgid "Set codepage for filenames inside zipfile"
-msgstr ""
+msgstr "为压缩文件内的文件名设置代码页"
 
 #: .\sopds\settings.py:194
 msgid ""
 "Enables read metadata from inpx-file (and stop scanning deeper from ipx-file "
 "place)"
-msgstr ""
+msgstr "启用从inpx-file中读取元数据（并停止从ipx-file中深入扫描）"
 
 #: .\sopds\settings.py:195
 msgid "Skip scanning INPX with unchanged size after previous scan"
-msgstr ""
+msgstr "跳过对尺寸未发生改变的INPX的扫描"
 
 #: .\sopds\settings.py:196
 msgid "Test avialability zip files listed in INPX before add in collection"
-msgstr ""
+msgstr "在将INPX中列出的压缩文件添加到集合中之前，测试其可用性"
 
 #: .\sopds\settings.py:197
 msgid "Test avialability book files listed in INPX before add in collection"
-msgstr ""
+msgstr "在将INPX中列出的图书文件添加到集合中之前，测试其可用性"
 
 #: .\sopds\settings.py:198
 msgid "Logical deleting unavialable files"

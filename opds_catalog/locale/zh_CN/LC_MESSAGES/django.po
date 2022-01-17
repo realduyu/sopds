@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-17 10:44+0800\n"
+"POT-Creation-Date: 2022-01-17 14:32+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,40 +37,43 @@ msgid "Catalogs: %(catalogs)s, books: %(books)s."
 msgstr "目录： %(catalogs)s, 图书： %(books)s."
 
 #: .\opds_catalog\feeds.py:167
-msgid "作者"
-msgstr ""
+#, fuzzy
+msgid "By authors"
+msgstr "作者"
 
 #: .\opds_catalog\feeds.py:168 .\opds_catalog\tests\test_feeds.py:26
-#, python-format
-msgid "作者: %(authors)s."
-msgstr ""
+#, fuzzy, python-format
+msgid "Authors: %(authors)s."
+msgstr "作者: %(authors)s<br/>"
 
 #: .\opds_catalog\feeds.py:169
-msgid "标题"
-msgstr ""
+#, fuzzy
+msgid "By titles"
+msgstr "标题"
 
 #: .\opds_catalog\feeds.py:170
 #, python-format
-msgid "图书: %(books)s."
-msgstr ""
+msgid "Books: %(books)s."
+msgstr "图书：%(books)s."
 
 #: .\opds_catalog\feeds.py:171
-msgid "体裁"
-msgstr ""
+msgid "By genres"
+msgstr "体裁"
 
 #: .\opds_catalog\feeds.py:172 .\opds_catalog\tests\test_feeds.py:27
-#, python-format
-msgid "体裁: %(genres)s."
-msgstr ""
+#, fuzzy, python-format
+msgid "Genres: %(genres)s."
+msgstr "体裁: %(genres)s"
 
 #: .\opds_catalog\feeds.py:173
-msgid "系列"
-msgstr ""
+#, fuzzy
+msgid "By series"
+msgstr "系列"
 
 #: .\opds_catalog\feeds.py:174
-#, python-format
-msgid "系列: %(series)s."
-msgstr ""
+#, fuzzy, python-format
+msgid "Series: %(series)s."
+msgstr "系列: %(series)s"
 
 #: .\opds_catalog\feeds.py:178
 #, python-format
@@ -80,7 +83,7 @@ msgstr "%(username)s 书架"
 #: .\opds_catalog\feeds.py:179
 #, python-format
 msgid "%(username)s books readed: %(bookshelf)s."
-msgstr "%(username)s books readed: %(bookshelf)s."
+msgstr "%(username)s 已读书: %(bookshelf)s."
 
 #: .\opds_catalog\feeds.py:319 .\opds_catalog\feeds.py:572
 #, python-format
@@ -100,7 +103,7 @@ msgstr "<b>系列: </b>%(series)s<br/>"
 #: .\opds_catalog\feeds.py:322 .\opds_catalog\feeds.py:575
 #, python-format
 msgid "<b>No in Series: </b>%(ser_no)s<br/>"
-msgstr "<b>No in Series: </b>%(ser_no)s<br/>"
+msgstr "<b>系列之外: </b>%(ser_no)s<br/>"
 
 #: .\opds_catalog\feeds.py:323 .\opds_catalog\feeds.py:576
 #, python-format
@@ -108,8 +111,8 @@ msgid ""
 "<b>File: </b>%(filename)s<br/><b>File size: </b>%(filesize)s<br/><b>Changes "
 "date: </b>%(docdate)s<br/>"
 msgstr ""
-"<b>文件: </b>%(filename)s<br/><b>文件大小: </b>%(filesize)s<br/><b>修改 "
-"日期: </b>%(docdate)s<br/>"
+"<b>文件: </b>%(filename)s<br/><b>文件大小: </b>%(filesize)s<br/><b>修改 日"
+"期: </b>%(docdate)s<br/>"
 
 #: .\opds_catalog\feeds.py:357 .\opds_catalog\tests\test_feeds.py:60
 msgid "Search by titles"
@@ -132,16 +135,19 @@ msgid "Search series"
 msgstr "根据系列搜索"
 
 #: .\opds_catalog\feeds.py:391
-msgid "找到的书"
-msgstr ""
+#, fuzzy
+msgid "Books found"
+msgstr "找到图书"
 
 #: .\opds_catalog\feeds.py:391
-msgid "隐藏重复项"
-msgstr ""
+#, fuzzy
+msgid "doubles hide"
+msgstr "隐藏重复项"
 
 #: .\opds_catalog\feeds.py:391
-msgid "显示重复项"
-msgstr ""
+#, fuzzy
+msgid "doubles show"
+msgstr "显示重复项 "
 
 #: .\opds_catalog\feeds.py:577
 #, python-format
@@ -302,14 +308,14 @@ msgstr "没有找到你要的书，请重试"
 msgid ""
 "Found %s books.\n"
 "I create list, after a few seconds, select the file to download:"
-msgstr ""
+msgstr "稍等一会，我创建了列表，请选择下载文件"
 
 #: .\opds_catalog\management\commands\sopds_telebot.py:253
 #: .\opds_catalog\management\commands\sopds_telebot.py:291
 msgid ""
 "The book on the link you specified is not found, try to repeat the book "
 "search first."
-msgstr ""
+msgstr "你指定的连接中未找到书本，请重复尝试"
 
 #: .\opds_catalog\management\commands\sopds_telebot.py:259
 msgid "Annotation:"
