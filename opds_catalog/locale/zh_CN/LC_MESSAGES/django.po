@@ -308,14 +308,17 @@ msgstr "没有找到你要的书，请重试"
 msgid ""
 "Found %s books.\n"
 "I create list, after a few seconds, select the file to download:"
-msgstr "稍等一会，我创建了列表，请选择下载文件"
+msgstr ""
+"找到 %s 本书.\n"
+"我创建了一个列表，稍后可选择文件进行下载"
 
 #: .\opds_catalog\management\commands\sopds_telebot.py:253
 #: .\opds_catalog\management\commands\sopds_telebot.py:291
 msgid ""
 "The book on the link you specified is not found, try to repeat the book "
 "search first."
-msgstr "你指定的连接中未找到书本，请重复尝试"
+msgstr ""
+"你指定的连接中未找到书本，请重复尝试"
 
 #: .\opds_catalog\management\commands\sopds_telebot.py:259
 msgid "Annotation:"
