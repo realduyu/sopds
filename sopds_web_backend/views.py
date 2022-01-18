@@ -1,3 +1,4 @@
+import os
 from random import randint
 
 from django.shortcuts import render, redirect
@@ -557,6 +558,39 @@ def hello(request):
     args = {}
     args['breadcrumbs'] = [_('HOME')]
     return render(request, 'sopds_hello.html', args)
+    
+@vary_on_headers("HTTP_ACCEPT_LANGUAGE")
+@sopds_login(url='web:login')
+def FileView(request):
+    if not os.path.isdir(config.SOPDS_ROOT_LIB):
+        os.mkdir(config.SOPDS_ROOT_LIB)
+    dir = ''
+    if request.GET:
+        dir = request.GET.get('dir', '')
+
+    baseDir = config.SOPDS_ROOT_LIB
+    if dir and dir != '':
+        if os.path.isdir(os.path.join(baseDir,dir)):
+            baseDir = os.path.join(baseDir,dir)
+        else:
+            dir = ''
+
+    items = []
+    for fileaddress in os.listdir(baseDir):
+        items.append({
+            'file' : fileaddress,
+            'isDir' : os.path.isdir(os.path.join(baseDir,fileaddress)),
+            'path' : os.path.join(dir,fileaddress),
+        })
+    
+    args = {}
+    args['breadcrumbs'] = [_('UPLOAD')]
+    args['files'] = items
+    args['baseDir'] = dir
+    args['parentDir'] = os.path.dirname(dir)
+
+    return render(request, 'sopds_upload.html', args)
+
 
 def LoginView(request):
     args = {}

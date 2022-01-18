@@ -17,6 +17,7 @@ urlpatterns = [
     url(r'^logout/$',views.LogoutView, name='logout'),
     url(r'^bs/delete/$',views.BSDelView, name='bsdel'),
     url(r'^bs/clear/$', views.BSClearView, name='bsclear'),
+    url(r'^file/$', views.FileView, name='file'),
     url(r'^$',views.hello, name='main'),
 ]
 
