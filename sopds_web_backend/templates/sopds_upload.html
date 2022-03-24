@@ -10,6 +10,11 @@
             <li class="list-group-item">
                 <a href="{% url "web:file" %}">.\{{ baseDir }}</a>
             </li>
+            {% if baseDir != '' %}
+                <li class="list-group-item">
+                    <a href="{% url "web:file" %}?dir={{ parentDir }}">..</a>
+                </li>
+            {% endif %}
             {%  for f in files %}
             <li class="list-group-item">
                 {% if f.isDir %}
@@ -19,12 +24,18 @@
                 {% endif %}
             </li>
             {% endfor %}
-            {% if baseDir != '' %}
-                <li class="list-group-item">
-                    <a href="{% url "web:file" %}?dir={{ parentDir }}">..</a>
-                </li>
-            {% endif %}
         </ul>
+
+        <div class="row">
+            <div class="col">
+                <label for="fileSelect" style="text-decoration: underline;">点击选择文件</label>
+                <input style="position:absolute;clip:rect(0 0 0 0);" id="fileSelect" multiple="multiple" type="file" accept="*" />
+            </div>
+        </div>
+        <div class="row">
+            <div id="preview" style="height: 120px;border: 1px solid #e1e1e1; background: #fff; ">
+            </div>
+        </div>
         <!-- <div class="row">
             <div class="col">
                 <button type="button" class="btn btn-outline-primary">{% trans "upload" %}</button>
@@ -32,7 +43,108 @@
         </div> -->
     </form>
 </div>
+<script>
+document.getElementById('fileSelect').addEventListener('change',function(){
+    let files = this.files;
+    console.log(files);
+})
+    
 
-</div>
-</div>
+var FileSelect = {
+    dragDrop: null,                 //拖拽敏感区域
+    fileFilter: [],                 //过滤后的文件数组
+    onSelect: function() {},        //文件选择后
+    
+    appendFiles :function(files){
+        var that = this;
+        var files = this.filter(files);
+        for (var i = 0, file; file = files[i]; i++) {
+            that.fileFilter.push(file);
+        }
+        that.funDealFiles();
+    },
+    filter: function(files) {
+        var arrFiles = [];
+        for (var i = 0, file; file = files[i]; i++) {
+            arrFiles.push(file);
+            this.fileCnt++;
+        }
+        return arrFiles;
+    },
+    //文件拖放
+    funDragHover: function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        this[e.type === "dragover"? "onDragOver": "onDragLeave"].call(e.target);
+        return this;
+    },
+    funPaste: function(e){
+        if( e && e.clipboardData && e.clipboardData.files )
+        {
+            // 阻止默认行为即不让剪贴板内容在div中显示出来
+            // e.preventDefault();
+            var i = 0, items, item, types;
+            var files = e.clipboardData.files;
+            this.appendFiles(files);
+            this.onPaste(e);
+        }
+        return this;
+    },
+    //获取选择文件，file控件或拖放
+    funGetFiles: function(e) {
+        // 取消鼠标经过样式
+        this.funDragHover(e);
+                
+        // 获取文件列表对象
+        var files = e.target.files || e.dataTransfer.files;
+        //继续添加文件
+        this.appendFiles(files);
+        return this;
+    },
+    //选中文件的处理与回调
+    funDealFiles: function() {
+        console.log(this.fileFilter);
+        for (var i = 0, file; file = this.fileFilter[i]; i++) {
+            //增加唯一索引值
+            file.index = i;
+        }
+        //执行选择回调
+        this.onSelect(this.fileFilter);
+        return this;
+    },
+    //删除对应的文件
+    funDeleteFile: function(fileDelete) {
+        var arrFile = [];
+        for (var i = 0, file; file = this.fileFilter[i]; i++) {
+            if (file != fileDelete) {
+                arrFile.push(file);
+            } else {
+                this.onDelete(fileDelete);  
+                this.fileCnt--;
+            }
+        }
+        this.fileFilter = arrFile;
+        this.funDealFiles();
+        return this;
+    },
+    
+    init: function() {
+        this.fileFilter = [];
+        var self = this;
+        if (this.dragDrop) {
+            this.dragDrop.addEventListener("dragover", function(e) { self.funDragHover(e); }, false);
+            this.dragDrop.addEventListener("dragleave", function(e) { self.funDragHover(e); }, false);
+            this.dragDrop.addEventListener("drop", function(e) { self.funGetFiles(e); }, false);
+            this.dragDrop.addEventListener('paste', function(e) { self.funPaste(e); }, false);
+        }
+    }
+};
+FileSelect.dragDrop = document.getElementById('previe');
+FileSelect.onSelect = function(files) {
+    fileUpload(files);
+}
+FileSelect.init();
+
+</script>
+
 {% endblock %}  
